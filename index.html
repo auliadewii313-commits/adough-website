@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADough | Donat Artisan Handmade</title>
+<link rel="icon" href="images/logo donat.jpg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="wadah">
+    <div style="display:flex; align-items:center; gap:14px;">
+      <button class="tombol-ikon tombol-hamburger" id="bukaNavigasi" aria-label="Buka menu">☰</button>
+      <a href="#beranda" class="merek">
+        <img src="images/logo donat.jpg" alt="Logo ADough">
+        ADough
+      </a>
+    </div>
+    <div class="navbar-tautan">
+      <a href="#beranda" class="aktif" data-i18n="nav.beranda">Beranda</a>
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#lokasi" data-i18n="nav.lokasi">Lokasi</a>
+      <a href="#cerita" data-i18n="nav.cerita">Cerita Kami</a>
+    </div>
+    <div class="navbar-aksi">
+      <button class="tombol-bahasa" id="tombolBahasa" aria-label="Ganti bahasa">
+        🌐 <span id="labelBahasa">ID</span>
+      </button>
+      <button class="tombol-ikon" id="tombolTema" aria-label="Ganti tema">🌙</button>
+      <button class="tombol-ikon tombol-keranjang" id="bukaKeranjang" aria-label="Buka keranjang">
+        🛒
+        <span class="jumlah-keranjang" id="jumlahKeranjang">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PANEL NAVIGASI MOBILE ============ -->
+<div class="overlay" id="overlayNavigasi"></div>
+<aside class="panel-navigasi" id="panelNavigasi">
+  <a href="#beranda" class="merek"><img src="images/logo donat.jpg" alt="Logo ADough">ADough</a>
+  <a href="#beranda" data-i18n="nav.beranda">Beranda</a>
+  <a href="#menu" data-i18n="nav.menu">Menu</a>
+  <a href="#lokasi" data-i18n="nav.lokasi">Lokasi</a>
+  <a href="#cerita" data-i18n="nav.cerita">Cerita Kami</a>
+</aside>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="beranda">
+    <div class="wadah">
+      <div>
+        <span class="hero-label" data-i18n="hero.label">🍩 Baru dipanggang setiap hari</span>
+        <h1>
+          <span data-i18n="hero.judul1">Donat Handmade,</span><br>
+          <span data-i18n="hero.judul2">Segar Setiap Hari</span>
+        </h1>
+        <p data-i18n="hero.deskripsi">Dibuat dari bahan pilihan dengan resep rumahan yang diproofing perlahan. Lembut di dalam, manis pas di luar — cocok untuk teman ngopi atau hadiah spesial.</p>
+        <div class="hero-aksi">
+          <a href="#menu" class="tombol tombol-utama" data-i18n="hero.belanja">Belanja Sekarang</a>
+          <a href="#cerita" class="tombol tombol-outline" data-i18n="hero.lihatmenu">Lihat Menu</a>
+        </div>
+        <div class="hero-statistik">
+          <div><strong>500+</strong><span data-i18n="hero.stat1">Donat terjual/minggu</span></div>
+          <div><strong>4.9★</strong><span data-i18n="hero.stat2">Rating pelanggan</span></div>
+          <div><strong>6+</strong><span data-i18n="hero.stat3">Varian rasa</span></div>
+        </div>
+      </div>
+      <div class="hero-gambar">
+        <img src="images/tumpukan donat.jpg" alt="Donat andalan ADough">
+        <div class="hero-kartu-mengambang">
+          <div class="lingkaran-ikon">✨</div>
+          <div>
+            <p data-i18n="hero.koleksibaru">Koleksi Baru</p>
+            <p data-i18n="hero.truffleberry">Truffle Berry Delight</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KATEGORI (BENTO) ============ -->
+  <section class="bagian" id="menu">
+    <div class="wadah">
+      <div class="judul-bagian">
+        <div>
+          <h2 data-i18n="kategori.judul">Koleksi Artisan</h2>
+          <p data-i18n="kategori.subjudul">Jelajahi perjalanan rasa pilihan kami</p>
+        </div>
+      </div>
+      <div class="grid-kategori">
+        <div class="kartu-kategori kategori-besar">
+          <img src="images/donat coklat.jpg" alt="Kategori donat cokelat">
+          <div class="label">
+            <h3 data-i18n="kategori.coklat">Cokelat</h3>
+            <p data-i18n="kategori.coklat.sub">Keunggulan cokelat premium</p>
+          </div>
+        </div>
+        <div class="kartu-kategori">
+          <img src="images/donat matcha.jpg" alt="Kategori donat matcha">
+          <div class="label"><h3 data-i18n="kategori.matcha">Matcha</h3></div>
+        </div>
+        <div class="kartu-kategori">
+          <img src="images/donat stroberi.jpg" alt="Kategori donat stroberi">
+          <div class="label"><h3 data-i18n="kategori.stroberi">Stroberi</h3></div>
+        </div>
+        <div class="kartu-kategori kategori-lebar">
+          <img src="images/hempers box.jpg" alt="Kotak hampers premium">
+          <div class="label"><h3 data-i18n="kategori.premium">Kotak Premium</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FILTER + PRODUK ============ -->
+  <section class="bagian">
+    <div class="wadah">
+      <div class="judul-bagian">
+        <div>
+          <h2 data-i18n="produk.judul">Menu Favorit Kami</h2>
+          <p data-i18n="produk.subjudul">Pilih rasa kesukaanmu, tambahkan ke keranjang</p>
+        </div>
+      </div>
+
+      <div class="baris-filter" id="baris-filter">
+        <button class="tombol-filter aktif" data-kategori="semua" data-i18n="filter.semua">Semua</button>
+        <button class="tombol-filter" data-kategori="klasik" data-i18n="filter.klasik">Klasik</button>
+        <button class="tombol-filter" data-kategori="premium" data-i18n="filter.premium">Premium</button>
+        <button class="tombol-filter" data-kategori="segar" data-i18n="filter.segar">Segar & Fruity</button>
+      </div>
+
+      <div class="grid-produk" id="gridProduk">
+        <!-- produk dirender otomatis lewat script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROMO BANNER ============ -->
+  <section class="bagian" id="menu">
+    <div class="wadah">
+      <div class="banner-promo">
+        <div>
+          <span class="tag" data-i18n="promo.tag">Promo Terbatas</span>
+          <h2 data-i18n="promo.judul">Beli 6 Gratis 1</h2>
+          <p data-i18n="promo.deskripsi">Campur bebas semua rasa favoritmu, donat klasik ke-7 gratis untukmu.</p>
+        </div>
+        <button class="banner-promo" onclick="claimPromo()">
+    Klaim Promo
+</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KENAPA PILIH KAMI ============ -->
+  <section class="bagian" id="cerita">
+    <div class="wadah">
+      <div class="judul-bagian judul-tengah">
+        <h2 data-i18n="alasan.judul">Kenapa Pilih ADough?</h2>
+      </div>
+      <div class="grid-alasan">
+        <div class="item-alasan">
+          <div class="lingkaran-ikon-besar">🌾</div>
+          <h3 data-i18n="alasan.organik.judul">Bahan Berkualitas</h3>
+          <p data-i18n="alasan.organik.deskripsi">Tepung dan bahan pilihan, tanpa pengawet, diadon dengan resep rumahan.</p>
+        </div>
+        <div class="item-alasan">
+          <div class="lingkaran-ikon-besar">🕓</div>
+          <h3 data-i18n="alasan.segar.judul">Selalu Segar</h3>
+          <p data-i18n="alasan.segar.deskripsi">Diproofing dan digoreng setiap hari, langsung diglazing sebelum dikirim.</p>
+        </div>
+        <div class="item-alasan">
+          <div class="lingkaran-ikon-besar">🛵</div>
+          <h3 data-i18n="alasan.antar.judul">Pengiriman Cepat</h3>
+          <p data-i18n="alasan.antar.deskripsi">Pesan lewat WhatsApp, Gojek, atau Grab — donat hangat sampai dalam 45 menit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERI ============ -->
+  <section class="bagian" id="lokasi">
+    <div class="wadah">
+      <div class="judul-bagian">
+        <div>
+          <h2 data-i18n="galeri.judul">Keceriaan di Feed</h2>
+          <p data-i18n="galeri.subjudul">Ikuti @ADoughArtisan untuk manisnya update setiap hari</p>
+        </div>
+        <button class="tombol tombol-outline" data-i18n="galeri.ikuti">📷 Ikuti Kami</button>
+      </div>
+      <div class="grid-galeri">
+        <div class="item-galeri"><img src="images/toko adough.jpg" alt="Suasana toko ADough"></div>
+        <div class="item-galeri tinggi"><img src="images/donat box.jpg" alt="Box isi 12 donat"></div>
+        <div class="item-galeri"><img src="images/donat dibelah.jpg" alt="Tekstur donat"></div>
+        <div class="item-galeri tinggi"><img src="images/glazing.jpg" alt="Proses glazing donat"></div>
+        <div class="item-galeri"><img src="images/kopi&donat.jpg" alt="Kopi dan donat di meja"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="bagian">
+    <div class="wadah">
+      <div class="newsletter">
+        <div class="ikon-besar">✉️</div>
+        <h2 data-i18n="newsletter.judul">Gabung Sweet Club</h2>
+        <p data-i18n="newsletter.deskripsi">Dapatkan info rasa baru dan promo khusus member langsung ke email kamu.</p>
+        <form class="form-newsletter" id="formNewsletter">
+          <input type="email" required data-i18n-placeholder="newsletter.placeholder" placeholder="Alamat email kamu">
+          <button type="submit" class="tombol tombol-utama" data-i18n="newsletter.subscribe">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wadah">
+    <div class="footer-atas">
+      <div class="footer-merek">
+        <a href="#beranda" class="merek"><img src="images/logo donat.jpg" alt="Logo ADough">ADough</a>
+        <p data-i18n="footer.tagline">Donat handmade dengan sentuhan cinta di setiap gigitan. Order online, ambil di toko, atau delivery langsung ke rumahmu.</p>
+        <div class="footer-sosial">
+          <a href="https://instagram.com/adough.ofc" target="_blank" class="social-icon">
+    <i class="fa-brands fa-instagram"></i> Instagram
+</a>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></head>
+        </div>
+      </div>
+      <div class="footer-kolom-wadah">
+        <div class="footer-kolom">
+          <h4 data-i18n="footer.jelajahi">Jelajahi</h4>
+          <ul>
+            <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="#" data-i18n="footer.hampers">Paket Hampers</a></li>
+            <li><a href="#" data-i18n="footer.katering">Katering</a></li>
+          </ul>
+        </div>
+        <div class="footer-kolom">
+          <h4 data-i18n="footer.perusahaan">Perusahaan</h4>
+          <ul>
+            <li><a href="#cerita" data-i18n="footer.tentangkami">Tentang Kami</a></li>
+            <li><a href="#" data-i18n="footer.karir">Karir</a></li>
+            <li><a href="#" data-i18n="footer.kontak">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-kolom">
+          <h4 data-i18n="footer.mitraantar">Mitra Pengiriman</h4>
+          <div class="mitra-antar">
+            <span style="color:#00AA13;">GOJEK</span>
+            <span style="color:#00B14F;">GrabFood</span>
+            <span style="color:#EE4D2D;">ShopeeFood</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bawah">
+      <p data-i18n="footer.copyright">© 2026 ADough Artisan Donuts. Dibuat dengan sepenuh hati.</p>
+      <div style="display:flex; gap:20px;">
+        <a href="#" data-i18n="footer.privasi">Kebijakan Privasi</a>
+        <a href="#" data-i18n="footer.syarat">Syarat &amp; Ketentuan</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PANEL KERANJANG ============ -->
+<div class="overlay" id="overlayKeranjang"></div>
+<aside class="panel-keranjang" id="panelKeranjang">
+  <div class="kepala-keranjang">
+    <h3 data-i18n="keranjang.judul">Keranjang Belanja</h3>
+    <button class="tutup-keranjang" id="tutupKeranjang">✕</button>
+  </div>
+  <div class="isi-keranjang" id="isiKeranjang">
+    <!-- item keranjang dirender oleh script.js -->
+  </div>
+  <div class="kaki-keranjang" id="kakiKeranjang">
+    <div class="baris-ringkasan">
+      <span data-i18n="keranjang.subtotal">Subtotal</span>
+      <span id="subtotalKeranjang">Rp 0</span>
+    </div>
+    <div class="baris-ringkasan total">
+      <span data-i18n="keranjang.total">Total</span>
+      <span id="totalKeranjang">Rp 0</span>
+    </div>
+    <button class="tombol tombol-wa tombol-lebar" id="tombolCheckout" data-i18n="keranjang.checkout">📱 Pesan via WhatsApp</button>
+    <p class="label-pengiriman" data-i18n="keranjang.pengiriman">Atau Pesan Cepat via</p>
+    <div class="grid-pengiriman">
+      <button class="tombol tombol-gojek">🛵 Gojek</button>
+      <button class="tombol tombol-grab">🛵 Grab</button>
+    </div>
+  </div>
+</aside>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast">
+  <span>✓</span>
+  <span id="pesanToast">Ditambahkan ke keranjang</span>
+</div>
+
+<script src="js/produk.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
